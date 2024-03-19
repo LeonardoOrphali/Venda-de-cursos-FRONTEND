@@ -1,0 +1,27 @@
+.card-title{
+    text-decoration:none;
+    color: #000000;
+    font-size:20px;
+}
+
+.sub-card-text{
+    color: gray;
+    margin-bottom: 0;
+}
+
+
+.sub-card-img {
+    max-width:40px;
+    max-height:25px;
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
+
+.text-end{
+    float: inline-end;
+    color: rgb(0, 47, 255);
+    font-size:20px;
+    padding-right:15px;
+}
