@@ -25,3 +25,13 @@
     font-size:20px;
     padding-right:15px;
 }
+
+.rodape{
+   padding-left: 30px; 
+   border-radius: 0px 0px 0px 30px;
+   background-color: rgb(48, 102, 190);
+}
+
+.menu-rodape{
+    border-top: 10px solid rgb(48, 102, 190);
+}
