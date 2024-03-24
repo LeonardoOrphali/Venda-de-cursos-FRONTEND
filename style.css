@@ -1,14 +1,39 @@
+
+div.carousel-item{
+
+    height: 85vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+div.carousel-item img{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+
+
 .card-title{
-    text-decoration:none;
     color: #000000;
     font-size:20px;
+    text-decoration: none;
+}
+
+.card-title:hover{
+    color: rgb(85, 83, 83);
+    text-decoration: underline;
 }
 
 .sub-card-text{
     color: gray;
     margin-bottom: 0;
 }
-
 
 .sub-card-img {
     max-width:40px;
@@ -26,12 +51,14 @@
     padding-right:15px;
 }
 
-.rodape{
-   padding-left: 30px; 
-   border-radius: 0px 0px 0px 30px;
-   background-color: rgb(48, 102, 190);
+.card:hover{
+    transform: scale(1.05);
 }
 
-.menu-rodape{
-    border-top: 10px solid rgb(48, 102, 190);
+
+
+.rodape{
+   padding-left: 30px; 
+   border-radius: 0% 0% 0% 30px;
+   background-color: rgb(48, 102, 190);
 }
