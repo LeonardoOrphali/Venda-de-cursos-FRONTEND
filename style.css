@@ -1,6 +1,5 @@
 
 div.carousel-item{
-
     height: 85vh;
     min-height: 350px;
     background: no-repeat center center scroll;
@@ -8,7 +7,6 @@ div.carousel-item{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 div.carousel-item img{
@@ -19,6 +17,11 @@ div.carousel-item img{
 
 
 
+.card-img-top{
+    min-width: 100px;
+    min-height: 300px;
+}
+
 .card-title{
     color: #000000;
     font-size:20px;
@@ -26,7 +29,6 @@ div.carousel-item img{
 }
 
 .card-title:hover{
-    color: rgb(85, 83, 83);
     text-decoration: underline;
 }
 
@@ -38,10 +40,12 @@ div.carousel-item img{
 .sub-card-img {
     max-width:40px;
     max-height:25px;
-    width: auto;
-    height: auto;
     float: left;
     padding: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .text-end{
@@ -49,10 +53,6 @@ div.carousel-item img{
     color: rgb(0, 47, 255);
     font-size:20px;
     padding-right:15px;
-}
-
-.card:hover{
-    transform: scale(1.05);
 }
 
 
