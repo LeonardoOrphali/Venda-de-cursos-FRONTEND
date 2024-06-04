@@ -1,4 +1,60 @@
 
+.background-style{
+    background: blue solid;
+    text-align: center;
+}
+
+section.main{
+    padding-bottom: 95px;
+}
+div.conteudo-main{
+    padding-bottom: 70px;
+    position: relative;
+}
+
+div.item-2{
+    width:auto;
+}
+h1.title{
+    font: normal 60pt "Kanit", sans-serif;
+    color: #1C0051;
+}
+.back-img{
+    opacity: 0.1;
+    background-image: url(../img/curso.png);
+    background-size: 60px 60px;
+    background-repeat: repeat;
+    height: 15vh;
+    position: absolute;
+    z-index: -1;
+    image-rendering: auto;
+    background-position: 20% 40%;
+    background-attachment: fixed;
+}
+div.card-info{
+    background: #F0F3F6; 
+    max-width: 700px; 
+    height: 100px; 
+    border-radius: 20px;
+    color: #728188;
+}
+p.card-title{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font: normal 10pt arial;
+}
+p.card-sub{
+    font: bold 20pt arial;
+}
+
+div.main-desc{
+    font: normal 15pt arial;
+}
+h2.main-desc-title{
+    padding: 15px 0px 15px;
+    font: bold 25pt Helvetica;
+    color: #1C0051;
+}
 
 .text-end{
     float: inline-end;
@@ -6,7 +62,6 @@
     font-size:20px;
     padding-right:15px;
 }
-
 .rodape{
     padding-left: 30px; 
     border-radius: 0% 0% 0% 30px;

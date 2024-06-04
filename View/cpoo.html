@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Melhor loja de cursos">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilocurso.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Curso de POO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+     
+    h1.title{
+      padding-top: 10px;
+      font: normal 45pt "Kanit", sans-serif;
+    }
+    div.item-1{
+      background: white;
+      padding-top: 120px;
+      background-image: url(../img/programacaoc.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 90px;
+      width: 120px;
+      outline: solid rgb(48, 102, 190) 5px;
+    }
+      @media screen and (max-width:1199px){
+       h1.title{
+        padding-top: 20px;
+        font: normal 35pt "Kanit", sans-serif;
+      }
+      }
+      @media screen and (max-width:993px){
+        h1.title{
+        padding-top: 5px;
+        font: normal 30pt "Kanit", sans-serif;
+        }
+       .item-2{
+        font-size: normal 10pt;
+       }
+       .card-info{
+        width: 600px;
+       }
+       .background-img{
+        text-align: center;
+        top: 55vh;
+        width: 290px;
+       }
+      }
+      @media screen and (max-width:770px){
+        h1.title{
+         padding-top: 10px;
+         font: normal 25pt "Kanit", sans-serif;
+         color: #1C0051;
+        }
+        .card-info{
+        width: 500px;
+       }
+        .item-1{
+        width: 50vh;
+       }
+      }
+      @media screen and (max-width:575px){
+        h1.title{
+         padding-top: 40px;
+         font: normal 17pt "Kanit", sans-serif;
+        }
+       .back-img{
+        width: 90%;
+       }
+      }
+      @media screen and (max-width:523px){
+        
+       h1.title{
+        padding-top: 45px;
+        font: normal 11pt "Kanit", sans-serif;
+       }
+       .card-info{
+        width: 400px;
+       }
+       p.card-title{
+        font: normal 10pt arial;
+       }
+       p.card-sub{
+        font: bold 15pt arial;  
+       }
+       .card-button{
+        font: normal 9pt arial;  
+       }
+      }
+      @media screen and (max-width:400px){
+        h1.title{
+        padding-top: 45px;
+        font: normal 9pt "Kanit", sans-serif;
+        
+       }
+       .card-info{
+        width: 320px;
+       }
+       p.card-title{
+        font: normal 9pt arial;
+       }
+       p.card-sub{
+        font: bold 10pt arial;  
+       }
+       .card-button{
+        font: normal 9pt arial;  
+       }
+      }
+    </style>
+</head>
+<body>
+       <!--Header-->
+       <nav class=" navbar navbar-expand-lg navbar-light fixed-top bg-light" style="border-bottom: 7px solid rgb(48, 102, 190);">
+        <div class="container-fluid">
+          <a class="navbar-brand" data-toggle="tooltip" data-placement="right" href="index.html#curso1">
+             <img class="custom-logo" src="../img/curso.png" alt="Logo" width="70" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav nav-underline ms-auto">
+          <li class="nav-item">
+             <a class="nav-link" href='index.html#cursos'>Cursos</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link"href="login">Entrar</a>
+          </li>
+         </ul>
+         </div>
+        </div>
+       </nav>
+       <!--Main-->
+       <main style="padding: 200px 0px 200px;">
+        <section class="main">
+         <div class="conteudo-main row container mx-auto">
+            <div class="back-img"></div>
+            <div class="item-1 rounded-circle col-3">
+            </div>
+            <div class="item-2 fw-normal col-sm">   
+             <h1 class="title">
+              Programação Orientada a Objetos
+             </h1>
+            </div>
+          </div>
+          <div class="card-info row mx-auto shadow">
+            <div class="col text-center">
+              <p class="card-title">Carga horária</p>
+              <p class="card-sub">40 horas</p>
+            </div>
+            <div class="vr"></div>
+            <div class="col text-center">
+              <p class="card-title">Preço</p>
+              <p class="card-sub">Grátis</p>
+            </div>
+            <div class="vr"></div>
+            <div class="col text-center">
+              <p class="card-title">Comece agora</p>
+              <button type="button" class="card-button btn btn-success"><strong>Se inscreva</strong></button>
+            </div>
+          </div>
+        </section>
+       <!--Main-Desc-->
+       <div class="main-desc container" style="padding-top: 100px;">
+        <hr class="featurette-divider">
+        <h2 class="main-desc-title text-center">Descrição</h2>
+        <div class="container" style="padding-bottom: 100px;">
+        <p>
+          Este curso de Programação Orientada a Objetos (POO) oferece uma imersão detalhada nos princípios e práticas da POO, com uma carga horária total de 40 horas. O curso é adequado tanto para iniciantes quanto para programadores que desejam aprofundar seus conhecimentos em POO, fornecendo uma compreensão sólida e habilidades práticas em várias linguagens de programação.
+          Este curso é ideal para iniciantes na programação que desejam aprender POO, programadores que buscam aprofundar seus conhecimentos em POO, e desenvolvedores que querem aplicar práticas de design orientado a objetos em seus projetos
+        </p>
+        <div class="listas row container">
+        <div class="col">
+         <ul>
+          <p class="text-center"  style="color: #1C0051;"><strong>Conteúdo do Curso</strong></p>    
+          <li>
+            <p>
+            <i>Introdução à Programação Orientada a Objetos</i><br>
+            Fundamentos da POO<br>
+            Diferenças entre POO e programação procedural<br>
+            Histórico e evolução da POO
+            </p>
+          </li>
+          <li>
+            <p>
+            <i>Conceitos Básicos de POO</i><br>
+            Classes e objetos<br>
+            Atributos e métodos<br>
+            Encapsulamento e abstração
+            </p>
+          </li>
+          <li>
+            <p>
+            <i>Pilares da POO</i><br>
+            Herança: Conceitos e aplicação<br>
+            Polimorfismo: Sobrecarga e sobrescrita de métodos<br>
+            Abstração: Interfaces e classes abstratas
+            </p>
+          </li>
+         </ul>
+        </div>
+        <div class="col">
+         <ul>
+          <p class="text-center"  style="color: #1C0051;"><strong>Objetivos do Curso</strong></p>
+          <li><p>Compreender os princípios e conceitos fundamentais da POO</p></li>
+          <li><p>Desenvolver habilidades práticas em POO utilizando diversas linguagens de programação</p></li>
+          <li><p>Aprender a modelar e implementar soluções de software orientadas a objetos</p></li>
+          <li><p>Aplicar padrões de design e boas práticas na criação de software</p></li>
+          <li><p>Desenvolver e documentar projetos de software utilizando POO</p></li>
+         </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <p class="text-center"  style="color: #1C0051;"> <strong>Formato e Metodologia</strong></p>
+            <li><p>Aulas online: Vídeos e webinars ao vivo</p></li>
+            <li><p>Materiais de leitura: E-books, artigos e tutoriais</p></li>
+            <li><p>Atividades práticas: Projetos de programação e estudos de caso</p></li>
+            <li><p>Avaliação: Testes, quizzes e revisão de código</p></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+       </div>
+      </main>
+       <!--Footer-->
+        <section>
+          <a href="#" class=" rodape text-decoration-none text-white text-end fs-4">Voltar ao topo</a>
+        </section>
+           <footer class="text-white bg-dark" style="border-top: 10px solid rgb(48, 102, 190);">
+            <div class="row pt-5 pb-5">
+              <section class="col-md-6 pt-2 pb-5">
+                <img class="custom-logo" src="../img/cursoc.png" alt="logo" width="200" height="150">
+              </section>
+              <section class="col-md-3">
+                <h5>Redes sociais</h5>
+                <ul class="nav flex-column">
+                 <li class="nav-item" style="padding-left: 35px;">
+                   <a href="https://www.instagram.com" class="text-decoration-none text-white m-lg-2">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABOFBMVEVHcExxF/13F/1zFf2AFv2MCu+iBOmyAuLEAd7SANraBMzwHpedI+XeANfmANHmAr+PF/6fD/vxAL7qArV7GP21FvnRVurnZ+P2Z9roQeDzGtXzB8v7AqvWiPn+7fn////7ftv/A7z0BKH3v/H+3fT+ruj+AJr/9/r/RcD/bMDKFff/Bo3iG+r8GrX/AIH+H5r/yeP+BHj/t9n/V5r+Am7+H37+BGT/ssX/Imz/RXv/ucz+e4z+JFT/XI3/MGL+LUf/u7f/yc7/Alr+OUf+MSz+QzT+R0T+iHD+SRj+VzH+WQX+AkL+c2L/0sT+aCX+cBL/7+j+aQL+eRv/oUX/fwL+iBD/wXz+jgD/3rr/1rn+dgz+nAP9FpT+lw7+qgH+tQD+vQD/w1f9kwf/xAD9PFn9ogj/ywD9uAfgLZLBAAAAaHRSTlMAW9H+////////xEsC///N////zFz/////////////////uP////7///////////7////////////////////////////////////////////////////////F/7VQ///+/87/vsj/uqL0GQwAAAHcSURBVHgBRMlFehwxEEDhV1VS04yZ7U04m+AmcBjfLLscJ4xLHyA0YGqSlJ7P9MT6BRC52EEQuDjlFITx2eWvXJsDQWYIKgJj4VQW5gBJAg75K5vTgZDTFUEu/kUEzqGaiC6DMBbhpqQyoyKTNYD1Hp+Ui6J0ZH1HhXNA0RfzyRIZl5WprroK3BZwwvx0aUGdB87HCIN5VBUVP9i468ZLxWLv+pg6vJmDaSiSW2eyIRNg84/HxfVJmTD3DxFWGmWjrosRpxMNGr3iIqYbG7IGK5lKvZE3jVuTynsDzHRoD3xpxaTQvIKumGBWgCouM9bPKEisJg0VTV4X0aBqQEuXQ2kGlmVmZCtgCoxBJfeAz0b8NQbWI7wOAKCZMgbn9E6tItG1HFTKRQ4jgSYpiiPu6BFJW1fW9J7oDFWWgpf0MH09YnB6yIEYnIJhLhqkpw3aC4OuUJ4QlDzX55/Um5m4Ue6dmXr59LwkBM0xy/ieVNV7zSSTZMU3fs8UNBomr+v3jQx5X1XmB7tdgnNu1JqDl+0nbnp+HpLp+WM5bB0mIMJFc/ouSgjd+U99O1qYONOhFEMonPcZCZ6eGp9eRcSwhWkSRCIxKnfeIMBh1WRcFOhTaENo/096OTA7AACDzKODDThakgAAAABJRU5ErkJggg==" alt="Instagram">
+                   </a><br><br>
+                 </li>
+                 <li class="nav-item" style="padding-left: 32px;">
+                   <a href="https://www.facebook.com" class="text-decoration-none text-white m-lg-2">
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD30lEQVR4AayShW4cMRCGLQgzHArKDK9xor5KnyDMSZmZmZmZRWWuKMy8e3y7U8/KvXG6PlR+6dM3Wtv/tElYulnzHXI918HnvQZ7PNfgGfdvz1XQEJzFtz14B++y+crCO+D2XoG97ssw475swhwuGWSOK26T3zX24luWbZbehTxe1uS+YOiuCzGwOB+3mA2yAvcFU8cO7Mrsf30R3Lz4nfMcL+eglZyNkm3QGXZhJ0snzrOw3nE61uc4zQs4wmKOxC3PaIszZA4/I2On6zSsY8ni4P9Kx6loX/WJMCCOk5G47dCZ+r79HLtxR8LfueN45F318TDEORYiW4TJHBcvbf8QhT/TJoRiJkQME2bCJvRpJnwaM8TbuX24Q/k3wS82VR0JwRwOB8nSjF5xJgRvhgxIEtEj3kngLibHcQzc1YdDetWhICSj8iD5UW8MUsX+PoBGdNzJ/qXqQHBv5f4AVHCEBX4yp1LMG26EIJ2I+2hpFn18J8OsuQi5lXv9MxV7/ZAul35HIY0k7cCduJtV7tN95bt0sNgdt5g1sjR/GrX/+E9+j8DyI35xV7eh6q/cpftY2Q5tDwfSoVxYj5jwf5Yf4qV0j+bknXtY2bbZZxxIh9KtlkERfjaD52QFcgdSvl17xkq3zP4u3TwDSAlZAZ2pgmeZgrtZ6aZpraRrGpR0kuVZFTpXv1eBu1lpx5RW3DEFFu1kmWzSM21AiehC04wWc/uUxorbpn4XtU6CiuLWKcvZ5HVPxN7ZQkZwNytqnnxW1DwBSGETWSabnPsSkjuV4G5W2DC+hwPJyCZdL/22ngLJYt7DihonfAW1Y2BRR5bJJhtvaeL9OFoJ7mZrGiC3sHb8b6vlcdswFATRL2ZCDagAX12H+3DOOWe7A8d2fFQZlsRMXpzu6z8kVnGdPcDgDbRJ5InP/nFB3lFOTMlck1TVuW8gD8wzcRO3FeQfFvfeQUbeQU5M2K0yOGBJXlVjcmaO1HFTsernecPZTd/c3ZQ0CeTM7M+S3L0MNWbpT/a94abql7ebXDrburidECiZa5LsspZUZO+kzNI2Z31r9JPsmlx7M2namzHZG7J1vaQkp6qBff09csYN3FKS6jt5w1mPA2stos8sCb/b6zFzIPMcduOG+kzORjpurUaBtRKRuRwSsz8LqnpWQuaoV8MAu9V3VF/MG9Zi2DQXAxrwUlhSENeZA7aWwyY/+bc1tkKu/hOXxkLwZswHVLlTUlINNW0mjFnswC71W+FtGLOd+9ps+7k2qw/MtEmSrlNZB+c6z5jBrPo3nZNjzXQm1FTrjgSp6dYDakr3oFd9U+9y1lO9tTZT6gAAAABJRU5ErkJggg==" alt="Facebook">
+                   </a><br><br>
+                 </li>
+                </ul>
+              </section>
+              <section class="col-md-3">
+                <h5>Contato</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="tel:+5513111111111" class="text-decoration-none text-white">Tel: (13) 9 9999-9999</a><br><br>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://api.whatsapp.com/send?phone=5513999999999&text=Quero%20saber%20mais%20sobre%20o%20Curso!"
+                      target="_blank" class="text-decoration-none text-white">WhatsApp: (13) 9 9999-9999
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+           </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

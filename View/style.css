@@ -11,15 +11,41 @@ div.carousel-item{
 
 div.carousel-item img{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 10%;
     min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    image-rendering: auto;
 }
 
+.card-total{
+    animation: appear 3ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+  }
+  @keyframes appear {
+    from {
+    opacity: 0;
+    translate: 0 100vh;
+    }
+    
+    to {
+    opacity: 1;
+    translate: 0 0;
+    }
+}
+div#cursos{
+    padding-bottom: 50px;
+}
 
+main{
+    padding-bottom: 150px;
+}
 
 .card-img-top{
-    min-width: 100px;
-    min-height: 300px;
+    background: #D6F8F9;
+    padding: 15px 80px 15px 80px;
+    height: 300px;
 }
 
 .card-title{

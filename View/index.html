@@ -27,14 +27,23 @@
           font-size: large;
           padding: 0px 0px 0px;
         }
+        .card-img-top{
+          padding: 40px;
+        }
       }
       @media screen and (min-width: 768px) and (max-width: 992px){
+        .card-total{
+          flex: auto;
+        }
         .sub-card-text{
           font-size: medium;
         }
         .card-text-final{
           font-size: large;
           padding-right: 0px;
+        }
+        .card-img-top{
+          padding: 30px;
         }
       }
     </style>
@@ -43,8 +52,8 @@
     <!--Header-->
     <nav class=" navbar navbar-expand-lg navbar-light fixed-top bg-light" style="border-bottom: 7px solid rgb(48, 102, 190);">
       <div class="container-fluid">
-        <a class="navbar-brand" data-toggle="tooltip" data-placement="right" title="Voltar a página inicial" href="index.html">
-           <img class="custom-logo" src="../img/cap.png" alt="Logo" width="70" height="60">
+        <a class="navbar-brand" data-toggle="tooltip" data-placement="right" href="index.html">
+           <img class="custom-logo" src="../img/curso.png" alt="Logo" width="70" height="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -54,12 +63,6 @@
         <li class="nav-item">
            <a class="nav-link" href='#cursos'>Cursos</a>
         </li>
-        <li class="nav-item ">
-           <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
-        </li>
         <li class="nav-item">
            <a class="nav-link"href="login">Entrar</a>
         </li>
@@ -67,17 +70,17 @@
       </div>
     </div>
    </nav>
-   <!--CARROSEL-->
+   <!--Carrosel-->
    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../img/lojavirtual1.jpg" class="d-block w-100">
+        <img src="../img/carrosel1.jpg" class="d-block w-100 carrosel-img">
       </div>
       <div class="carousel-item">
-        <img src="../img/lojavirtual2.jpg" class="d-block w-100">
+        <img src="../img/lojavirtual2.jpg" class="d-block w-100 carrosel-img">
       </div>
       <div class="carousel-item">
-        <img src="../img/lojavirtual3.jpg" class="d-block w-100">
+        <img src="../img/lojavirtual3.jpg" class="d-block w-100 carrosel-img">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -90,26 +93,25 @@
     </button>
    </div>
    <!--Main-title-->
-   <div id='cursos' class="container" style="padding-top: 30px;">
+   <div id='cursos' class="container" style="padding-top: 35px;">
      <hr class="featurette-divider">
-     <h1 class="text-center" style="padding-top: 15px;">Conheça nossos cursos</h1>
+     <h1 class="cursos-title text-center" style="padding-top: 18px;">Conheça nossos cursos</h1>
    </div>
-   <br><br>
    <!--Main-cards-->
    <main>
-   <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
+   <div id="curso1" class="card-group cursos-master container" onload="carregou()">
+    <div class="row row-cols-md-3 row-cols-auto">
    <!--Card-1-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
      <div class="border-0 card mb-4 shadow">
-      <a href="marketing.html">
-       <img src="../img/lojavirtual1.jpg" class="card-img-top" alt="...">
+      <a href="cmarketing.html">
+       <img src="../img/marketing.png" class="card-img-top" alt="...">
       </a>
       <div class="card-body">
-        <a class="card-title" href="marketing.html"><strong>Marketing</strong></a>
-        <p class="card-text">O curso de marketing ensina como divulgar e promover produtos e serviços, ajudando os negócios.</p>
+        <a class="card-title" href="cmarketing.html"><strong>Marketing</strong></a>
+        <p class="card-text">O curso de marketing ensina como divulgar e promover produtos e serviços, ajudando os negócios. Ideal para iniciantes e pequenos empresários</p>
           <img class="sub-card-img" src="../img/clock.png">
-          <span class="sub-card-text">Duração 2H</span>
+          <span class="sub-card-text">Duração 20H</span>
           <span class="card-text-final text-end"><strong>Grátis</strong></span>
       </div>
      </div>
@@ -117,14 +119,14 @@
    <!--Card-2-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
       <div class="border-0 card mb-4 shadow" >
-       <a href="#">
-        <img src="../img/lojavirtual2.jpg" class="card-img-top" alt="...">
+       <a href="cdesign.html">
+        <img src="../img/design.png" class="card-img-top" alt="...">
        </a>
        <div class="card-body">
-         <a class="card-title" href="#"><strong>Special title treatment</strong></a>
-         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+         <a class="card-title" href="cdesign.html"><strong>Design</strong></a>
+         <p class="card-text">O curso de design ensina a criar peças visuais atraentes e eficazes, melhorando a comunicação visual de negócios e projetos</p>
            <img class="sub-card-img" src="../img/clock.png">
-           <span class="sub-card-text">Duração 2H</span>
+           <span class="sub-card-text">Duração 20H</span>
            <span class="card-text-final text-end"><strong>Grátis</strong></span>
        </div>
       </div>
@@ -132,14 +134,14 @@
    <!--Card-3-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
      <div class="border-0 card mb-4 shadow">
-      <a href="#">
-       <img src="../img/lojavirtual3.jpg" class="card-img-top" alt="...">
+      <a href="cpoo.html">
+       <img src="../img/programacao.png" class="card-img-top" alt="...">
       </a>
       <div class="card-body">
-        <a class="card-title" href="#"><strong>Special title treatment</strong></a>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a class="card-title" href="cpoo.html"><strong>Programação Orientada a Objetos</strong></a>
+        <p class="card-text">O curso de POO ensina os conceitos de Programação Orientada a Objetos, aprimorando habilidades em organização e reutilização de código</p>
           <img class="sub-card-img" src="../img/clock.png">
-          <span class="sub-card-text">Duração 2H</span>
+          <span class="sub-card-text">Duração 40H</span>
           <span class="card-text-final text-end"><strong>Grátis</strong></span>
       </div>
      </div>
@@ -147,14 +149,14 @@
    <!--Card-4-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
      <div class="border-0 card mb-4 shadow">
-      <a href="#">
-       <img src="../img/cap.png" class="card-img-top" alt="...">
+      <a href="cexcel.html">
+       <img src="../img/excel.png" class="card-img-top" alt="...">
       </a>
       <div class="card-body">
-        <a class="card-title" href="#"><strong>Special title treatment</strong></a>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a class="card-title" href="cexcel.html"><strong>Excel</strong></a>
+        <p class="card-text">O curso de Excel ensina desde a criação de planilhas até funções avançadas, melhorando a eficiência e a análise de dados</p>
           <img class="sub-card-img" src="../img/clock.png">
-          <span class="sub-card-text">Duração 2H</span>
+          <span class="sub-card-text">Duração 20H</span>
           <span class="card-text-final text-end"><strong>Grátis</strong></span>
       </div>
      </div>
@@ -162,14 +164,14 @@
    <!--Card-5-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
      <div class="border-0 card mb-4 shadow">
-      <a href="#">
-       <img src="../img/lojavirtual1.jpg" class="card-img-top" alt="...">
+      <a href="ccyberseguranca.html">
+       <img src="../img/cyber-security.png" class="card-img-top" alt="...">
       </a>
       <div class="card-body">
-        <a class="card-title" href="#"><strong>Special title treatment</strong></a>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a class="card-title" href="ccyberseguranca.html"><strong>Cybersegurança</strong></a>
+        <p class="card-text">O curso de Cybersegurança aborda técnicas de proteção digital, melhorando habilidades em prevenção e resposta a ameaças virtuais</p>
           <img class="sub-card-img" src="../img/clock.png">
-          <span class="sub-card-text">Duração 2H</span>
+          <span class="sub-card-text">Duração 50H</span>
           <span class="card-text-final text-end"><strong>Grátis</strong></span>
       </div>
      </div>
@@ -177,21 +179,21 @@
    <!--Card-6-->
     <div class="card-total col-sm-5 mb-3 mb-sm-0">
      <div class="border-0 card mb-4 shadow">
-      <a href="#">
-       <img src="../img/cap.png" class="card-img-top" alt="...">
+      <a href="canalisededados.html">
+       <img src="../img/data.png" class="card-img-top" alt="...">
       </a>
       <div class="card-body">
-       <a class="card-title" href="#"><strong>Special title treatment</strong></a>
-       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+       <a class="card-title" href="canalisededados.html"><strong>Análise de Dados</strong></a>
+       <p class="card-text">O curso de Análise de Dados ensina técnicas de coleta, processamento e interpretação de dados, aprimorando habilidades em tomada de decisões</p>
          <img class="sub-card-img" src="../img/clock.png">
-         <span class="sub-card-text">Duração 2H</span>
+         <span class="sub-card-text">Duração 30H</span>
          <span class="card-text-final text-end"><strong>Grátis</strong></span>
       </div>
      </div>
+     </div>
     </div>
    </div>
-  </div>
-   </main><br><br>
+   </main>
    <!--Footer-->
    <section>
     <a href="#" class=" rodape text-decoration-none text-white text-end fs-4">Voltar ao topo</a>
@@ -199,21 +201,22 @@
    <footer class="text-white bg-dark" style="border-top: 10px solid rgb(48, 102, 190);">
     <div class="row pt-5 pb-5">
       <section class="col-md-6 pt-2 pb-5">
-        <img class="custom-logo" src="../img/cap.png" alt="logo" width="200" height="150">
+        <img class="custom-logo" src="../img/cursoc.png" alt="logo" width="200" height="150">
       </section>
       <section class="col-md-3">
-        <h5>Album</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a href="#" class="text-decoration-none text-white m-lg-2">Link</a><br><br>
+        <h5>Redes sociais</h5>
+         <ul class="nav flex-column">
+          <li class="nav-item" style="padding-left: 35px;">
+            <a href="https://www.instagram.com" class="text-decoration-none text-white m-lg-2">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABOFBMVEVHcExxF/13F/1zFf2AFv2MCu+iBOmyAuLEAd7SANraBMzwHpedI+XeANfmANHmAr+PF/6fD/vxAL7qArV7GP21FvnRVurnZ+P2Z9roQeDzGtXzB8v7AqvWiPn+7fn////7ftv/A7z0BKH3v/H+3fT+ruj+AJr/9/r/RcD/bMDKFff/Bo3iG+r8GrX/AIH+H5r/yeP+BHj/t9n/V5r+Am7+H37+BGT/ssX/Imz/RXv/ucz+e4z+JFT/XI3/MGL+LUf/u7f/yc7/Alr+OUf+MSz+QzT+R0T+iHD+SRj+VzH+WQX+AkL+c2L/0sT+aCX+cBL/7+j+aQL+eRv/oUX/fwL+iBD/wXz+jgD/3rr/1rn+dgz+nAP9FpT+lw7+qgH+tQD+vQD/w1f9kwf/xAD9PFn9ogj/ywD9uAfgLZLBAAAAaHRSTlMAW9H+////////xEsC///N////zFz/////////////////uP////7///////////7////////////////////////////////////////////////////////F/7VQ///+/87/vsj/uqL0GQwAAAHcSURBVHgBRMlFehwxEEDhV1VS04yZ7U04m+AmcBjfLLscJ4xLHyA0YGqSlJ7P9MT6BRC52EEQuDjlFITx2eWvXJsDQWYIKgJj4VQW5gBJAg75K5vTgZDTFUEu/kUEzqGaiC6DMBbhpqQyoyKTNYD1Hp+Ui6J0ZH1HhXNA0RfzyRIZl5WprroK3BZwwvx0aUGdB87HCIN5VBUVP9i468ZLxWLv+pg6vJmDaSiSW2eyIRNg84/HxfVJmTD3DxFWGmWjrosRpxMNGr3iIqYbG7IGK5lKvZE3jVuTynsDzHRoD3xpxaTQvIKumGBWgCouM9bPKEisJg0VTV4X0aBqQEuXQ2kGlmVmZCtgCoxBJfeAz0b8NQbWI7wOAKCZMgbn9E6tItG1HFTKRQ4jgSYpiiPu6BFJW1fW9J7oDFWWgpf0MH09YnB6yIEYnIJhLhqkpw3aC4OuUJ4QlDzX55/Um5m4Ue6dmXr59LwkBM0xy/ieVNV7zSSTZMU3fs8UNBomr+v3jQx5X1XmB7tdgnNu1JqDl+0nbnp+HpLp+WM5bB0mIMJFc/ouSgjd+U99O1qYONOhFEMonPcZCZ6eGp9eRcSwhWkSRCIxKnfeIMBh1WRcFOhTaENo/096OTA7AACDzKODDThakgAAAABJRU5ErkJggg==" alt="Instagram">
+            </a><br><br>
           </li>
-          <li class="nav-item">
-            <a href="#" class="text-decoration-none text-white m-lg-2">Link</a><br><br>
+          <li class="nav-item" style="padding-left: 32px;">
+            <a href="https://www.facebook.com" class="text-decoration-none text-white m-lg-2">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD30lEQVR4AayShW4cMRCGLQgzHArKDK9xor5KnyDMSZmZmZmZRWWuKMy8e3y7U8/KvXG6PlR+6dM3Wtv/tElYulnzHXI918HnvQZ7PNfgGfdvz1XQEJzFtz14B++y+crCO+D2XoG97ssw475swhwuGWSOK26T3zX24luWbZbehTxe1uS+YOiuCzGwOB+3mA2yAvcFU8cO7Mrsf30R3Lz4nfMcL+eglZyNkm3QGXZhJ0snzrOw3nE61uc4zQs4wmKOxC3PaIszZA4/I2On6zSsY8ni4P9Kx6loX/WJMCCOk5G47dCZ+r79HLtxR8LfueN45F318TDEORYiW4TJHBcvbf8QhT/TJoRiJkQME2bCJvRpJnwaM8TbuX24Q/k3wS82VR0JwRwOB8nSjF5xJgRvhgxIEtEj3kngLibHcQzc1YdDetWhICSj8iD5UW8MUsX+PoBGdNzJ/qXqQHBv5f4AVHCEBX4yp1LMG26EIJ2I+2hpFn18J8OsuQi5lXv9MxV7/ZAul35HIY0k7cCduJtV7tN95bt0sNgdt5g1sjR/GrX/+E9+j8DyI35xV7eh6q/cpftY2Q5tDwfSoVxYj5jwf5Yf4qV0j+bknXtY2bbZZxxIh9KtlkERfjaD52QFcgdSvl17xkq3zP4u3TwDSAlZAZ2pgmeZgrtZ6aZpraRrGpR0kuVZFTpXv1eBu1lpx5RW3DEFFu1kmWzSM21AiehC04wWc/uUxorbpn4XtU6CiuLWKcvZ5HVPxN7ZQkZwNytqnnxW1DwBSGETWSabnPsSkjuV4G5W2DC+hwPJyCZdL/22ngLJYt7DihonfAW1Y2BRR5bJJhtvaeL9OFoJ7mZrGiC3sHb8b6vlcdswFATRL2ZCDagAX12H+3DOOWe7A8d2fFQZlsRMXpzu6z8kVnGdPcDgDbRJ5InP/nFB3lFOTMlck1TVuW8gD8wzcRO3FeQfFvfeQUbeQU5M2K0yOGBJXlVjcmaO1HFTsernecPZTd/c3ZQ0CeTM7M+S3L0MNWbpT/a94abql7ebXDrburidECiZa5LsspZUZO+kzNI2Z31r9JPsmlx7M2namzHZG7J1vaQkp6qBff09csYN3FKS6jt5w1mPA2stos8sCb/b6zFzIPMcduOG+kzORjpurUaBtRKRuRwSsz8LqnpWQuaoV8MAu9V3VF/MG9Zi2DQXAxrwUlhSENeZA7aWwyY/+bc1tkKu/hOXxkLwZswHVLlTUlINNW0mjFnswC71W+FtGLOd+9ps+7k2qw/MtEmSrlNZB+c6z5jBrPo3nZNjzXQm1FTrjgSp6dYDakr3oFd9U+9y1lO9tTZT6gAAAABJRU5ErkJggg==" alt="Facebook">
+            </a><br><br>
           </li>
-          <li class="nav-item">
-            <a href="#" class="text-decoration-none text-white m-lg-2">Link</a><br><br>
-          </li>
-        </ul>
+         </ul>
       </section>
       <section class="col-md-3">
         <h5>Contato</h5>
